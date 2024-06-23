@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body >
+   <nav>
+    <h1>Find Your Recipies  <i class="fa-solid fa-bowl-food"></i> <i  style="margin-left: 4rem;" onclick="recipes.innerHTML='' ,tbl.style.display='flex'" class="fa-solid fa-house icon"> home</i></h1>
+    <div>
+        <input id="dish" type="text" placeholder="Enter the dish name to find it's recipe">
+        <i id="search" class="fa-solid fa-magnifying-glass"></i>
+    </div>
+   </nav>
+   
+   <div id="recipes"> <h1> Find Your Recipies With Us....</h1>
+</div>
+<div id="tbl">
+    <img class='img' src='img0.webp' alt="food">
+    <img class='img' src='img1.webp' alt="food">
+</div>
+   <div id="recipeDetails">
+    <i id="closeBtn" onclick="recipeDetails.style.display='none'" class="fa-solid fa-xmark"></i>
+    <div id="details">
+    </div>
+   </div>
+<script src="script.js"></script>
+</body>
+</html>

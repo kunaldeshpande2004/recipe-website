@@ -1,0 +1,622 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: 2rem; 
+   scrollbar-color:rgb(58, 166, 185) rgb(249, 249, 224);
+}
+body{
+   
+    text-align: center; 
+    font-family: Arial, Helvetica, sans-serif; 
+    margin-top: 0rem; 
+    background-color:rgb(249, 249, 224);
+}
+nav{
+    
+    padding:1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(58, 166, 185);
+    cursor:pointer;
+    
+}
+#dish{
+      border-radius: 1rem;
+      text-align: left;
+      padding: 21px;
+      width: 20rem;
+      border: none;
+      outline: none;
+      cursor:pointer 
+}
+#search{
+    background-color:rgb(255, 208, 208);
+    text-align: center;
+    padding: 1.1rem;
+    border-radius: 1rem;
+}
+#search:hover{
+    background-color:rgb(255, 158, 170);
+}
+#dish:hover{
+    background-color: rgb(255, 208, 208);
+}
+#recipes{
+    margin-top: .7rem;
+    color: rgb(243, 92, 109);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.main{
+    
+    background-color: rgb(255, 208, 208) ;
+    text-align: center;
+    margin: 2rem;
+    height: 30rem;
+    width: 24.1rem;
+    color: black;
+    cursor: pointer;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    
+}
+.im{
+    margin: 0.7rem;
+    width: 22rem;
+    height: 19rem;
+    border-radius: 1rem;
+
+}
+.im:hover{
+    transform: scale(1.012);
+}
+.main:hover{
+    background-color:  rgb(255, 158, 170)  ;
+    transform: scale(1.011);
+}
+.instructions:hover{
+    transform: scale(1.040);
+}
+#recipeDetails{
+    display: none;
+    background-color:rgb(255, 208, 208);
+    align-items: center;
+    margin: 1rem;
+    height: 25rem;
+    width: 30rem;
+    color: black;
+    cursor: pointer;
+    border-radius: 1rem;
+    overflow: auto;
+   padding-left: 2rem;
+   flex-direction: column;
+   
+   scrollbar-width: 2rem; 
+   scrollbar-color:rgb(58, 166, 185) rgb(249, 249, 224);
+
+   position: fixed;
+   top: 50%;
+   left:50%;
+   transform: translate(-50%,-50%);
+  
+}
+#closeBtn{
+    margin-top:0.5rem;
+    background-color:rgb(255, 158, 170);
+    border-radius: 2rem;
+    padding: .2rem;
+    width: 1.5rem;
+    font-size: 1.3rem; 
+}
+#closeBtn:hover{
+  transform: scale(1.2);
+
+}
+#details{
+    padding: 1rem;
+    font-size: 1.2rem;
+    height: 100vh;
+
+}
+#link{
+    text-decoration: none;
+    color: black;
+}
+#link:hover{
+    
+    color: rgba(0, 0, 0, 0.514);
+}
+
+#tbl{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin: .5rem;
+ 
+    height: 30rem;
+    background-color:rgb(58, 166, 185);
+    border-radius: 2rem;
+}
+.icon:hover{
+    transform: scale(1.090);
+}
+.img{
+    width: 35rem;
+    height: 30rem;
+    padding: 2rem;
+}
+
+
+@media (min-width: 1200px) { 
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scrollbar-width: 2rem; 
+       scrollbar-color:rgb(58, 166, 185) rgb(249, 249, 224);
+    }
+    body{
+       
+        text-align: center; 
+        font-family: Arial, Helvetica, sans-serif; 
+        margin-top: 0rem; 
+        background-color:rgb(249, 249, 224);
+    }
+    nav{
+        
+        padding:1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color:rgb(58, 166, 185);
+        cursor:pointer;
+        
+    }
+    #dish{
+          border-radius: 1rem;
+          text-align: left;
+          padding: 21px;
+          width: 20rem;
+          border: none;
+          outline: none;
+          cursor:pointer 
+    }
+    #search{
+        background-color:rgb(255, 208, 208);
+        text-align: center;
+        padding: 1.1rem;
+        border-radius: 1rem;
+    }
+    #search:hover{
+        background-color:rgb(255, 158, 170);
+    }
+    #dish:hover{
+        background-color: rgb(255, 208, 208);
+    }
+    #recipes{
+        margin-top: .7rem;
+        color: rgb(243, 92, 109);
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .main{
+        
+        background-color: rgb(255, 208, 208) ;
+        text-align: center;
+        margin: 2rem;
+        height: 30rem;
+        width: 24.1rem;
+        color: black;
+        cursor: pointer;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        
+    }
+    .im{
+        margin: 0.7rem;
+        width: 22rem;
+        height: 19rem;
+        border-radius: 1rem;
+    
+    }
+    .im:hover{
+        transform: scale(1.012);
+    }
+    .main:hover{
+        background-color:  rgb(255, 158, 170)  ;
+        transform: scale(1.011);
+    }
+    .instructions:hover{
+        transform: scale(1.040);
+    }
+    #recipeDetails{
+        display: none;
+        background-color:rgb(255, 208, 208);
+        align-items: center;
+        margin: 1rem;
+        height: 25rem;
+        width: 30rem;
+        color: black;
+        cursor: pointer;
+        border-radius: 1rem;
+        overflow: auto;
+       padding-left: 2rem;
+       flex-direction: column;
+       
+       scrollbar-width: 2rem; 
+       scrollbar-color:rgb(58, 166, 185) rgb(249, 249, 224);
+    
+       position: fixed;
+       top: 50%;
+       left:50%;
+       transform: translate(-50%,-50%);
+      
+    }
+    #closeBtn{
+        margin-top:0.5rem;
+        background-color:rgb(255, 158, 170);
+        border-radius: 2rem;
+        padding: .2rem;
+        width: 1.5rem;
+        font-size: 1.3rem; 
+    }
+    #closeBtn:hover{
+      transform: scale(1.2);
+    
+    }
+    #details{
+        padding: 1rem;
+        font-size: 1.2rem;
+        height: 100vh;
+    
+    }
+    #link{
+        text-decoration: none;
+        color: black;
+    }
+    #link:hover{
+        
+        color: rgba(0, 0, 0, 0.514);
+    }
+    
+    #tbl{
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        margin: .5rem;
+     
+        height: 30rem;
+        background-color:rgb(58, 166, 185);
+        border-radius: 2rem;
+    }
+    .icon:hover{
+        transform: scale(1.090);
+    }
+    .img{
+        width: 35rem;
+        height: 30rem;
+        padding: 2rem;
+    }
+
+ }
+
+
+@media (max-width: 768px) {
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: 2rem; 
+   scrollbar-color:rgb(58, 166, 185) rgb(249, 249, 224);
+}
+body{
+   
+    text-align: center; 
+    font-family: Arial, Helvetica, sans-serif; 
+    margin-top: 0rem; 
+    background-color:rgb(249, 249, 224);
+}
+nav{
+    
+    padding:1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(58, 166, 185);
+    cursor:pointer;
+    
+}
+#dish{
+      border-radius: 1rem;
+      text-align: left;
+      padding: 21px;
+      width: 20rem;
+      border: none;
+      outline: none;
+      cursor:pointer 
+}
+#search{
+    background-color:rgb(255, 208, 208);
+    text-align: center;
+    padding: 1.1rem;
+    border-radius: 1rem;
+}
+#search:hover{
+    background-color:rgb(255, 158, 170);
+}
+#dish:hover{
+    background-color: rgb(255, 208, 208);
+}
+#recipes{
+    margin-top: .7rem;
+    color: rgb(243, 92, 109);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.main{
+    
+    background-color: rgb(255, 208, 208) ;
+    text-align: center;
+    margin: 2rem;
+    height: 30rem;
+    width: 24.1rem;
+    color: black;
+    cursor: pointer;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    
+}
+.im{
+    margin: 0.7rem;
+    width: 22rem;
+    height: 19rem;
+    border-radius: 1rem;
+
+}
+.im:hover{
+    transform: scale(1.012);
+}
+.main:hover{
+    background-color:  rgb(255, 158, 170)  ;
+    transform: scale(1.011);
+}
+.instructions:hover{
+    transform: scale(1.040);
+}
+#recipeDetails{
+    display: none;
+    background-color:rgb(255, 208, 208);
+    align-items: center;
+    margin: 1rem;
+    height: 25rem;
+    width: 30rem;
+    color: black;
+    cursor: pointer;
+    border-radius: 1rem;
+    overflow: auto;
+   padding-left: 2rem;
+   flex-direction: column;
+   
+   scrollbar-width: 2rem; 
+   scrollbar-color:rgb(58, 166, 185) rgb(249, 249, 224);
+
+   position: fixed;
+   top: 50%;
+   left:50%;
+   transform: translate(-50%,-50%);
+  
+}
+#closeBtn{
+    margin-top:0.5rem;
+    background-color:rgb(255, 158, 170);
+    border-radius: 2rem;
+    padding: .2rem;
+    width: 1.5rem;
+    font-size: 1.3rem; 
+}
+#closeBtn:hover{
+  transform: scale(1.2);
+
+}
+#details{
+    padding: 1rem;
+    font-size: 1.2rem;
+    height: 100vh;
+
+}
+#link{
+    text-decoration: none;
+    color: black;
+}
+#link:hover{
+    
+    color: rgba(0, 0, 0, 0.514);
+}
+
+#tbl{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin: .5rem;
+ 
+    height: 30rem;
+    background-color:rgb(58, 166, 185);
+    border-radius: 2rem;
+}
+.icon:hover{
+    transform: scale(1.090);
+}
+.img{
+    width: 35rem;
+    height: 30rem;
+    padding: 2rem;
+}
+
+}
+
+@media (max-width: 576px) { 
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scrollbar-width: 2rem; 
+       scrollbar-color:rgb(58, 166, 185) rgb(249, 249, 224);
+    }
+    body{
+       
+        text-align: center; 
+        font-family: Arial, Helvetica, sans-serif; 
+        margin-top: 0rem; 
+        background-color:rgb(249, 249, 224);
+    }
+    nav{
+        
+        padding:1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color:rgb(58, 166, 185);
+        cursor:pointer;
+        
+    }
+    #dish{
+          border-radius: 1rem;
+          text-align: left;
+          padding: 21px;
+          width: 20rem;
+          border: none;
+          outline: none;
+          cursor:pointer 
+    }
+    #search{
+        background-color:rgb(255, 208, 208);
+        text-align: center;
+        padding: 1.1rem;
+        border-radius: 1rem;
+    }
+    #search:hover{
+        background-color:rgb(255, 158, 170);
+    }
+    #dish:hover{
+        background-color: rgb(255, 208, 208);
+    }
+    #recipes{
+        margin-top: .7rem;
+        color: rgb(243, 92, 109);
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .main{
+        
+        background-color: rgb(255, 208, 208) ;
+        text-align: center;
+        margin: 2rem;
+        height: 30rem;
+        width: 24.1rem;
+        color: black;
+        cursor: pointer;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        
+    }
+    .im{
+        margin: 0.7rem;
+        width: 22rem;
+        height: 19rem;
+        border-radius: 1rem;
+    
+    }
+    .im:hover{
+        transform: scale(1.012);
+    }
+    .main:hover{
+        background-color:  rgb(255, 158, 170)  ;
+        transform: scale(1.011);
+    }
+    .instructions:hover{
+        transform: scale(1.040);
+    }
+    #recipeDetails{
+        display: none;
+        background-color:rgb(255, 208, 208);
+        align-items: center;
+        margin: 1rem;
+        height: 25rem;
+        width: auto;
+        color: black;
+        cursor: pointer;
+        border-radius: 1rem;
+        overflow: auto;
+       padding-left: 2rem;
+       flex-direction: column;
+       
+       scrollbar-width: 2rem; 
+       scrollbar-color:rgb(58, 166, 185) rgb(249, 249, 224);
+    
+       position: fixed;
+       top: 50%;
+       left:50%;
+       transform: translate(-50%,-50%);
+      
+    }
+    #closeBtn{
+        margin-top:0.5rem;
+        background-color:rgb(255, 158, 170);
+        border-radius: 2rem;
+        padding: .2rem;
+        width: 1.5rem;
+        font-size: 1.3rem; 
+    }
+    #closeBtn:hover{
+      transform: scale(1.2);
+    
+    }
+    #details{
+        padding: 1rem;
+        font-size: 1.2rem;
+        height: 100vh;
+    
+    }
+    #link{
+        text-decoration: none;
+        color: black;
+    }
+    #link:hover{
+        
+        color: rgba(0, 0, 0, 0.514);
+    }
+    
+    #tbl{
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        margin: .5rem;
+     
+        height: 30rem;
+        background-color:rgb(58, 166, 185);
+        border-radius: 2rem;
+    }
+    .icon:hover{
+        transform: scale(1.090);
+    }
+    .img{
+        width: 12rem;
+        height: 29rem;
+        padding: 2rem;
+    }
+    
+ }
