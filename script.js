@@ -1,8 +1,8 @@
 
 let i=2;
        setInterval(()=>{
-          tbl.innerHTML=`<img class='img' src='img${i}.webp' alt="food">`;
-          tbl.innerHTML=tbl.innerHTML+`<img class='img' src='img${i+1}.webp' alt="food">`
+          tbl.innerHTML=`<img class='img img-fluid' src='img${i}.webp' alt="food">`;
+          tbl.innerHTML=tbl.innerHTML+`<img class='img img-fluid' src='img${i+1}.webp' alt="food">`
           i+=2;
           if(i==10){
             i=0;
@@ -10,10 +10,11 @@ let i=2;
        },5000);
 
 let recipies=document.querySelector("#recipes");
-let recpie=document.querySelector("#dish");
+let recpie=document.querySelector("#dis");
 let search=document.querySelector("#search");
 
-search.addEventListener("click",()=>{
+search.addEventListener("click",(e)=>{
+    e.preventDefault();
     tbl.style.display="none";
     let inputVal=recpie.value.trim();
     if(inputVal===""){ 
@@ -33,6 +34,7 @@ async function fetchRecipe(food) {
         const response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${food}`);
 
         const data = await response.json();
+       // console.log(data);
 
         if (data.meals==null) {
             recipies.innerHTML = "<h2>No recipes found for this dish .</h2>";
@@ -64,6 +66,7 @@ async function fetchRecipe(food) {
     let details=document.querySelector("#details");
     function popup(recipe){
         details.innerHTML=`
+        
          <h2>${recipe.strMeal}</h2>
          <br>
          <h3>Ingredients:</h3>
