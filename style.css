@@ -14,28 +14,36 @@ body{
     background-color:rgb(249, 249, 224);
 }
 nav{
-    
+    width: auto;
     padding:1rem;
     display: flex;
-    justify-content: space-between;
+   
+    justify-content: space-evenly;
+    justify-content: sp;
     align-items: center;
-    background-color:rgb(58, 166, 185);
+    background-color:rgb(58, 166, 185) !important;
     cursor:pointer;
     
 }
-#dish{
+@media(max-width:600px){
+    nav{
+        flex-direction: column;
+        height: 25vh;
+    }
+}
+#dis{
       border-radius: 1rem;
       text-align: left;
-      padding: 21px;
-      width: 20rem;
+      padding:1.1rem;
       border: none;
       outline: none;
+    
       cursor:pointer 
 }
 #search{
     background-color:rgb(255, 208, 208);
     text-align: center;
-    padding: 1.1rem;
+    
     border-radius: 1rem;
 }
 #search:hover{
@@ -57,17 +65,18 @@ nav{
     text-align: center;
     margin: 2rem;
     height: 30rem;
-    width: 24.1rem;
+    width: auto;
     color: black;
     cursor: pointer;
     border-radius: 1rem;
     overflow: hidden;
     transition: transform 0.3s ease;
     
+    
 }
 .im{
     margin: 0.7rem;
-    width: 22rem;
+    width: 21rem;
     height: 19rem;
     border-radius: 1rem;
 
@@ -121,6 +130,7 @@ nav{
     padding: 1rem;
     font-size: 1.2rem;
     height: 100vh;
+    width: 16rem;
 
 }
 #link{
@@ -520,12 +530,11 @@ nav{
         flex-wrap: wrap;
     }
     .main{
-        
         background-color: rgb(255, 208, 208) ;
         text-align: center;
         margin: 2rem;
         height: 30rem;
-        width: 24.1rem;
+        width: 40rem;
         color: black;
         cursor: pointer;
         border-radius: 1rem;
@@ -535,9 +544,10 @@ nav{
     }
     .im{
         margin: 0.7rem;
-        width: 22rem;
-        height: 19rem;
+        width: 93%;
+        height: auto;
         border-radius: 1rem;
+        
     
     }
     .im:hover{
